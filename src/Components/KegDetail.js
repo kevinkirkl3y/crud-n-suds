@@ -28,6 +28,7 @@ function KegDetail(props){
     <p>Pints Left: {quantity}</p>
     <button onClick = {() => handleChangeKegQuantityButton(keg, true, 1)}>Sell Pint</button>
     <button onClick = {() => handleChangeKegQuantityButton(keg, false, 124)}>Restock Keg</button>
+    <button onClick = {props.onClickingEdit}>Update Keg</button>
    </> 
   )
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import KegInventory from './KegInventory';
 import NewKegForm from './NewKegForm';
 import KegDetail from './KegDetail';
+import EditKegForm from './EditKegForm';
 
 class KegControl extends React.Component {
   constructor(props) {
@@ -10,7 +11,8 @@ class KegControl extends React.Component {
       // state slices
       formVisibleOnPage: false,
       kegInventory: [],
-      selectedKeg: null
+      selectedKeg: null,
+      editing: false
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -20,6 +22,7 @@ class KegControl extends React.Component {
       this.setState({
         formVisibleOnPage: false,
         selectedKeg: null,
+        editing:false
       });
     }else{
       this.setState(prevState => ({
@@ -51,15 +54,37 @@ class KegControl extends React.Component {
       kegInventory: editedKegInventory,
     });
   }
+  handleEditClick = () => {
+    this.setState({editing:true});
+  }
+  handleEditingKegInInventory = (kegToEdit) => {
+    const editedKegInventory = this.state.kegInventory
+      .filter(keg => keg.id !== this.state.selectedKeg.id)
+      .concat(kegToEdit);
+    this.setState({
+      kegInventory: editedKegInventory,
+      editing: false,
+      selectedKeg: null
+    })
+  }
   render(){
     //conditional requirements
     let currentlyVisibleState = null;
     let buttonText = null;
-    if ( this.state.selectedKeg != null){
+    if (this.state.editing){
+      currentlyVisibleState = 
+      <EditKegForm
+      keg = {this.state.selectedKeg}
+      onEditKeg = {this.handleEditingKegInInventory}
+      />
+      buttonText = "Return to Tap List";
+    }
+    else if ( this.state.selectedKeg != null){
       currentlyVisibleState =
       <KegDetail
       keg = {this.state.selectedKeg}
       onChangingKegQuantityClick = {this.handleChangeKegQuantityClick}
+      onClickingEdit ={this.handleEditClick}
       />
       buttonText = "Return to Tap List";
     }else if (this.state.formVisibleOnPage) {

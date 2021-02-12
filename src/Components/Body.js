@@ -1,9 +1,10 @@
 import React from 'react';
+import KegControl from './KegControl';
 
 function Body(){
   return(
     <>
-      <h1>placeholder</h1>
+      <KegControl />
     </>
   )
 }

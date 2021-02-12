@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function KegDetail(props){
-  const {keg} = props;
+  const {keg, onClickingDelete} = props;
   let quantity = keg.quantity;
   if(parseInt(quantity) === 0){
     quantity = 'This Keg is Cached Out';
@@ -29,6 +29,7 @@ function KegDetail(props){
     <button onClick = {() => handleChangeKegQuantityButton(keg, true, 1)}>Sell Pint</button>
     <button onClick = {() => handleChangeKegQuantityButton(keg, false, 124)}>Restock Keg</button>
     <button onClick = {props.onClickingEdit}>Update Keg</button>
+    <button onClick = {() => onClickingDelete(keg.id)}>Remove Keg From List</button>
    </> 
   )
 }

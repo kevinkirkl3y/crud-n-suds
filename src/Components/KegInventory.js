@@ -12,7 +12,8 @@ function KegInventory(props) {
         whenKegClicked = {props.onKegSelection}
         name={keg.name}
         brand={keg.brand}
-        price={parseInt(keg.price)}
+        alcCont={keg.alcCont}
+        price={keg.price}
         quantity={parseInt(keg.quantity)}
         id={keg.id}
         key={keg.id}

@@ -7,7 +7,8 @@ function NewKegForm(props) {
     e.preventDefault();
     props.onNewKegTapping({
       name: e.target.name.value, 
-      brand: e.target.brand.value, 
+      brand: e.target.brand.value,
+      alcCont: e.target.alcCont.value, 
       price: e.target.price.value, 
       quantity: e.target.quantity.value, 
       id: v4()});
@@ -23,6 +24,10 @@ function NewKegForm(props) {
         type='text'
         name='brand'
         placeholder='Brand Name'/>
+        <input
+        type='float'
+        name='alcCont'
+        placeholder='Alcohol Content'/>
         <input
         type='float'
         name='price'

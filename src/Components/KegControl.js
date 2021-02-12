@@ -43,6 +43,14 @@ class KegControl extends React.Component {
       selectedKeg: selectedKeg
     });
   }
+  handleChangeKegQuantityClick = (kegToEdit) => {
+    const editedKegInventory = this.state.kegInventory
+    .filter(keg => keg.id !== this.state.selectedKeg.id)
+    .concat(kegToEdit);
+    this.setState({
+      kegInventory: editedKegInventory,
+    });
+  }
   render(){
     //conditional requirements
     let currentlyVisibleState = null;
@@ -51,6 +59,7 @@ class KegControl extends React.Component {
       currentlyVisibleState =
       <KegDetail
       keg = {this.state.selectedKeg}
+      onChangingKegQuantityClick = {this.handleChangeKegQuantityClick}
       />
       buttonText = "Return to Tap List";
     }else if (this.state.formVisibleOnPage) {

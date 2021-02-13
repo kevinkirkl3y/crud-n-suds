@@ -7,9 +7,11 @@ import Body from './Body';
 function App() {
   return (
     <>
-      <Header />
-      <Body />
-      <Footer />
+      <div className="app">
+        <Header />
+        <Body />
+        <Footer />
+      </div>
     </>
   );
 }

@@ -1,10 +1,25 @@
-# Getting Started with Create React App
+# CRUD 'N' Suds
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### "React Fundamentals Project for Epicodus 2.12.21"
 
-## Available Scripts
+#### by Kevin Kirkley
 
-In the project directory, you can run:
+## Description
+CRUD N Suds is the newest programming-themed bar in the Portland Area so this project was developed to help the crew manage their ever-changing taplist and track their inventory as pints are sold. This program has full CRUD functionality with the ability to Create, Read, Update and Delete kegs within their system.
+
+## User Stories
+* As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price and alcoholContent.
+* As a user, I want to submit a form to add a new keg to a list.
+* As a user, I want to be able to click on a keg to see its detail page.
+* As a user, I want to see how many pints are left in a keg.
+* As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1. Pints should not be able to go below 0.
+* As a user, I want the option to edit a keg's properties after entering them just in case I make a mistake.
+* As a user, I want to be able to delete a keg.
+* As a user, I want a keg to update to say "Out of Stock" once it's empty.
+
+## Program Structure
+
+<img src="./READMEAssets/Crud-N-Suds.jpg">
 
 ### `npm start`
 
@@ -14,57 +29,57 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Software Requirements
+1. Internet Browser
+2. A code editor such as VSCode in order to view or edit codebase. 
+3. Node.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Open by downloading:
+1. Download the [repository](https://github.com/kevinkirkl3y/crud-n-suds.git) onto your computer by clicking the 'clone or download button'.
+2. Open within your text editor and navigate to the `crud-n-suds` folder and run `npm run build` in your console.
+3. Run `npm start` in your console to fire up the program and then open in your browser. 
 
-### `npm run eject`
+### Open with Bash/GitBash:
+1. Clone this repository onto your computer: 
+```
+git clone https://github.com/kevinkirkl3y/crud-n-suds.git
+```
+2. Navigate into the `crud-n-suds` directory and open in VSCode or preferred text editor using `code .` in your terminal.
+3. Open within your text editor and navigate to the `crud-n-suds` folder and run `npm run build` in your console.
+4. Run `npm start` in your console to fire up the program and then open in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Known Bugs / Issues
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* None currently to note
 
-## Learn More
+## Support / Contact Details
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+_Contact Kevin Kirkley at [kevinmkirkley@gmail.com](mailto:kevinmkirkley@gmail.com) with and questions, concerns or additions._
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+<details>
+  <summary>Expand Tech/tools</summary>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* [Bootstrap Components](https://getbootstrap.com/docs/3.3/components/)
+* Javascript
+* React
+* CSS
+* Node.js
+* Google Fonts
 
-### Analyzing the Bundle Size
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ©️ License & Copyright
 
-### Making a Progressive Web App
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright (c) 2020 **_Kevin Kirkley_**

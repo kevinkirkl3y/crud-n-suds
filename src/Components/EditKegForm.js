@@ -29,12 +29,14 @@ function EditKegForm(props){
         defaultValue={keg.brand}
         placeholder='Brand Name'/>
         <input
-        type='float'
+        type='number'
+        step='0.01'
         name='alcCont'
         defaultValue={keg.alcCont}
         placeholder='Alcohol Content'/>
         <input
-        type='float'
+        type='number'
+        step='0.01'
         name='price'
         defaultValue={keg.price}
         placeholder='Price'/>

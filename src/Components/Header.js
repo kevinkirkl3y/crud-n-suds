@@ -1,9 +1,12 @@
 import React from 'react';
 
+
 function Header(){
   return(
     <>
-      <h1>CRUD 'N' Suds</h1>
+      <div className='header'>
+        <h1>CRUD 'N' Suds</h1>
+      </div>
     </>
 
   ) 

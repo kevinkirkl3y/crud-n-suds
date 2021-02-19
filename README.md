@@ -21,6 +21,27 @@ CRUD N Suds is the newest programming-themed bar in the Portland Area so this pr
 
 <img src="./READMEAssets/Crud-N-Suds.jpg">
 
+
+
+### Software Requirements
+1. Internet Browser
+2. A code editor such as VSCode in order to view or edit codebase. 
+3. Node.js
+
+### Open by downloading:
+1. Download the [repository](https://github.com/kevinkirkl3y/crud-n-suds.git) onto your computer by clicking the 'clone or download button'.
+2. Open within your text editor and navigate to the `crud-n-suds` folder and run `npm install` in your console to install project dependencies.
+3. Run `npm start` in your console to fire up the program and then open in your browser. 
+
+### Open with Bash/GitBash:
+1. Clone this repository onto your computer: 
+```
+git clone https://github.com/kevinkirkl3y/crud-n-suds.git
+```
+2. Navigate into the `crud-n-suds` directory and open in VSCode or preferred text editor using `code .` in your terminal.
+3. Open within your text editor and navigate to the `crud-n-suds` folder and run `npm install` in your console to install all project dependencies.
+4. Run `npm start` in your console to fire up the program and then open in your browser.
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -33,28 +54,7 @@ You will also see any lint errors in the console.
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### Software Requirements
-1. Internet Browser
-2. A code editor such as VSCode in order to view or edit codebase. 
-3. Node.js
-
-### Open by downloading:
-1. Download the [repository](https://github.com/kevinkirkl3y/crud-n-suds.git) onto your computer by clicking the 'clone or download button'.
-2. Open within your text editor and navigate to the `crud-n-suds` folder and run `npm run build` in your console.
-3. Run `npm start` in your console to fire up the program and then open in your browser. 
-
-### Open with Bash/GitBash:
-1. Clone this repository onto your computer: 
-```
-git clone https://github.com/kevinkirkl3y/crud-n-suds.git
-```
-2. Navigate into the `crud-n-suds` directory and open in VSCode or preferred text editor using `code .` in your terminal.
-3. Open within your text editor and navigate to the `crud-n-suds` folder and run `npm run build` in your console.
-4. Run `npm start` in your console to fire up the program and then open in your browser.
-
-
+It correctly bundles React in production mode and optimizes the build for the best performance.a
 
 ## Known Bugs / Issues
 
